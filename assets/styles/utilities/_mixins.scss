@@ -1,0 +1,6 @@
+@mixin font($size,$color){
+  color: $color;
+  font-size:$size ;
+  position: absolute;
+  object-fit: cover;
+}

@@ -1,0 +1,74 @@
+.anim{
+  height: 100vh;
+  width: 100vm;
+  background-color: #000000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div{
+    text-align: center;
+    z-index: 20;
+  }
+}
+.title{
+      position: relative;
+      font-size: 7em;
+      color: #ffffff;
+
+  text-shadow: 0 0 0.05em #ff0000
+}
+.a_content{
+
+}
+.span1{
+  @include font(25vmin, #ee661d);
+  top: 30vh;
+  left: 45%;
+
+}
+.span2{
+  @include font(8vmin, #d023c7);
+  bottom: 25vh;
+  left:50%;
+}
+.span3{
+  @include font(7vmin, #ffffff);
+  top: 10vh;
+  left:23%;
+}
+.span4{
+  @include font(13vmin,#23d05d);
+  bottom: 12vh;
+  right: 15%;
+}
+.span5{
+  @include font(20vmin, #767474);
+  top: 40vh;
+  left: 20%;
+}
+.span6{
+  @include font(18vmin,#d0cd23 );
+  top: 10vh;
+  left: 40%;
+}
+.span7{
+  @include font(15vmin,#16d0b4 );
+  top: 23vh;
+  left: 72%;
+}
+.span8{
+  @include font(18vmin, #222d4b);
+  bottom:6vh;
+  left:25%;
+}
+.span9{
+  @include font(18vmin, #ff0000);
+  top: 14vh;
+  right: 32%;
+}
+.span10{
+  @include font(6vmin, #7aff00);
+  bottom: 10vh;
+  right: 28%;
+}
