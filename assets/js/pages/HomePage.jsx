@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from "react-router-dom";
 const Home = () => {
     let parallax = (e)=>{
         document.querySelectorAll('.layer ').forEach(layer =>{
@@ -11,6 +11,7 @@ const Home = () => {
         })
     }
     return (
+
         <div onMouseMove={parallax} className="anim">
                 <span className="span1 layer" data-speed="5"><i className="fas fa-music"></i></span>
                 <span className="span2 layer" data-speed="8"><i className='fas fa-coffee'></i></span>
@@ -26,7 +27,9 @@ const Home = () => {
                 <h1 className="title">Welcome to my Portfolio...</h1>
                 <br/>
                 <br/>
-                <a href="" className="btn btn-info a_content">get to know me </a>
+                <Link className="btn btn-info a_content" to="/about">
+                    get to know me
+                </Link>
             </div>
 
          </div>

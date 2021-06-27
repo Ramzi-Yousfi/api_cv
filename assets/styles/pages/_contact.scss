@@ -1,0 +1,56 @@
+
+.contact{
+  background: linear-gradient(132deg, #435ebd, #2c46bf, #205cd5, #4869db);
+  background-size: 400% 400%;
+  animation: Gradient 10s ease infinite;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.line{
+  width: 2px;
+  border-radius: 5%;
+  background-color: black;
+  height: 80vh;
+  margin-top: 10vh;
+  float: right;
+}
+.form_contact{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  form{
+    width: 90%;
+  }
+}
+.button{
+  float: right !important;
+}
+.logo{
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo1 {
+  width: 25%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.PhoneInput{
+  display: flex !important;
+  flex-direction: row !important;
+}
