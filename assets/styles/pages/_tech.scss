@@ -1,5 +1,101 @@
 .tech{
-  height: 100vh;
   width: 100%;
-  background-color: blue;
+  background-color: #6C63FF;
+  position: relative;
+}
+
+#app > div > div.tech > div > div > div:nth-child(5) > div > img{
+  filter:grayscale(0);
+  background-color: #0adecd;
+  animation:spin 10s linear infinite;
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+}
+.img-tech{
+  border-radius: 100%;
+  width: 30vh !important;
+  padding: 2vh;
+  filter:grayscale(100);
+}
+.img-tech:hover{
+  border: 3px solid #000000;
+  filter:grayscale(0);
+  background-color: #d6dbdb;
+}
+.tech-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side{
+  z-index: 25;
+}
+.side-fa{
+  height: 50px;
+  width: 20px;
+  color: #000000;
+  background-color: #d90909;
+  position: absolute;
+  top: 30vh;
+  left: 150px;
+  border-radius:  0 20% 20% 0;
+  text-align: center;
+  transition-timing-function: linear;
+  transition-duration: 1s
+}
+.side-div{
+  position: absolute;
+  width: 150px;
+  height: 400px;
+  background-color: #ffffff;
+  left: 0px;
+  top: 20vh;
+  border: 2px #000000 solid;
+  border-radius:0 5% 5% 0 ;
+  transition-timing-function: linear;
+  transition-duration: 1s
+}
+.side-fa-click{
+  height: 50px;
+  width: 20px;
+  color: #db0909;
+  background-color: #000000;
+  position: absolute;
+  top: 30vh;
+  border-radius:  0 20% 20% 0;
+  text-align: center;
+  left: 0;
+  transition-timing-function: linear;
+  transition-duration: 1s
+}
+.side-div-click{
+  position: absolute;
+  width: 150px;
+  height: 400px;
+  background-color: #000000;
+  left: -150px;
+  top: 20vh;
+  border: 2px white solid;
+  border-radius:0 5% 5% 0 ;
+  transition-timing-function: linear;
+  transition-duration: 1s
+}
+.fa-rotate{
+  display: inline-block;
+  transform-origin: center;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transition: transform 1s;
+}
+.fa-no-rotate{
+  display: inline-block;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  transition: transform 1s;
+  transform-origin: center;
+}
+.img-tool{
+  width: 120px;
+  padding-left: 15px;
+  padding-top: 8px;
 }
